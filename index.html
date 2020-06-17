@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+		<head>
+				<title>Startpage</title>
+				<link rel="stylesheet" type="text/css" href="static/styles.css">
+		</head>
+
+		<body class="bg">
+				<div>
+					<h1><span id="time"></span></h1>
+					<h6><span id="tmd"></span></h6>  
+				</div>
+
+				<div id="items">
+						<a href="https://www.google.com">
+								<img src="static/icons/google.png" class="icons">
+						</a>
+						
+						<a href="https://www.youtube.com">
+								<img src="static/icons/youtube.png" class="icons">
+						</a>
+						
+						<a href="https://www.instagram.com">
+								<img src="static/icons/instagram.png" class="icons">
+						</a>
+						
+						<a href="https://www.facebook.com">
+								<img src="static/icons/facebook.png" class="icons">
+						</a><br>
+
+						<a href="https://www.reddit.com">
+								<img src="static/icons/reddit.png" class="icons">
+						</a>
+
+						<a href="https://www.zoom.us">
+								<img src="static/icons/zoom.png" class="icons">
+						</a>
+
+						<a href="https://docs.google.com">
+								<img src="static/icons/gdocs.png" class="icons">
+						</a>
+
+						<a href="https://mail.google.com">
+								<img src="static/icons/gmail.png" class="icons">
+						</a><br>
+
+						<a href="https://www.messenger.com">
+								<img src="static/icons/messenger.png" class="icons">
+						</a>
+
+						<a href="https://whatever">
+								<img src="static/icons/books.png" class="icons">
+						</a>
+
+						<a href="https://whatever">
+								<img src="static/icons/reminder.png" class="icons">
+						</a>
+
+						<a href="https://web.whatsapp.com">
+								<img src="static/icons/whatsapp.png" class="icons">
+						</a>
+
+				</div>
+		
+		</body>
+
+		 <script>
+			function clockAndDate() {
+				var now = new Date();
+				var days = ['Sunday', 'Monday', 'Tuesday',
+							'Wednesday', 'Thursday',
+							'Friday', 'Saturday']
+				var months = ['January', 'February', 'March', 
+							'April', 'May', 'June', 'July',
+							'August', 'September', 'October',
+							'November', 'December']
+				day = now.getDay()
+				today = days[day]
+				date = now.getDate()
+                month_now = now.getMonth()
+				display_month = months[month_now]
+				hours = (now.getHours() < 10 ? '0' + now.getHours() : now.getHours());
+				minutes = (now.getMinutes() < 10 ? '0' + now.getMinutes() : now.getMinutes());
+				time = hours + ':' + minutes
+				tmd = today + ', ' + display_month + ' ' + date;
+				document.getElementById('time').innerHTML = time;
+				document.getElementById('tmd').innerHTML = tmd;
+			}
+			setInterval(clockAndDate, 1000);
+		 </script>
+</html>

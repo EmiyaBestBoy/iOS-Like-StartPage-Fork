@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('SFProText-Regular.woff2') format('woff2'), url('SFProText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+	font-family: Inter;
+	height: 100%;
+	font-style: normal;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.bg {
+	background-image: url("back.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	font-size: 4.7em;
+	font-style: normal;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+h6 {
+	font-size: 1.5em;
+	font-weight: 380;
+	color: white;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+img {
+	border-radius: 20px;
+}
+
+.icons {
+	width: 4.2em;
+	height: 4.2em;
+}
+
+#items{
+    text-align:center;
+    margin:50px auto;
+}
+
+#items a{
+    margin:15px 30px;
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+}
